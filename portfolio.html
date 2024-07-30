@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ibrahim Farooki - Portfolio</title>
+    <style>
+        body {
+    background-color: #121212; /* Black background */
+    color: #ffffff; /* White text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.hero-header {
+    background-color: #1c1c1c; /* Darker shade of black */
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #0073e6; /* Dark blue color */
+}
+
+.logo i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .navlinks {
+    display: flex;
+    list-style: none;
+}
+
+nav .navlinks li {
+    margin-left: 20px;
+}
+
+nav .navlinks a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav .navlinks a:hover {
+    color: #0073e6; /* Dark blue hover */
+}
+.portfolio-container {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.portfolio-container h1 {
+    color: #0073e6; /* Dark blue color */
+    margin-bottom: 40px;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #1c1c1c; /* Darker shade of black */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-item h2 {
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.portfolio-item p {
+    color: #d3d3d3; /* Lighter grey color for text */
+}
+
+/* Responsive design for portfolio */
+@media (max-width: 768px) {
+    .portfolio-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-item {
+        width: 90%;
+    }
+}
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Muhammad Ibrahim Farooki</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <div class="portfolio-container">
+        <h1>My Portfolio</h1>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                
+                <h2>Game</h2>
+                <p>A brief description of this project, highlighting key features and technologies used.</p>
+            </div>
+            <div class="portfolio-item">
+                
+                <h2>!Z!</h2>
+                <p>A brief description of this project, highlighting key features and technologies used.</p>
+            </div>
+            <div class="portfolio-item">
+                
+                <h2>BulletWealth</h2>
+                <p>A brief description of this project, highlighting key features and technologies used.</p>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        var typed = new Typed(".input", {
+            strings: ["Frontend Developer", "kid", "Web Developer"],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+    </script>
+</body>
+</html>
